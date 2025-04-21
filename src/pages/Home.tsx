@@ -12,9 +12,11 @@ export default function Home() {
 
   useEffect(() => {
     getPortfolioItems()
-      .then(projects => {
-        setFeaturedProjects(projects.slice(0, 4)); // Show 4 featured projects
-        setLoading(false);
+      .then((projects: any[]) => {
+        if(projects && projects.length > 0) {
+            setFeaturedProjects(projects || []); // Show 4 featured projects
+            setLoading(false);
+        }
       })
       .catch(console.error);
   }, []);

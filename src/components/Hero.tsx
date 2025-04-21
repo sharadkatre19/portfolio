@@ -170,20 +170,6 @@ export default function Hero() {
           </Box>
         </Fade>
       </Box>
-      
-      {/* Add CSS keyframes for animations */}
-      <style jsx global>{`
-        @keyframes blink {
-          from, to { border-color: transparent }
-          50% { border-color: currentColor }
-        }
-        
-        @keyframes float {
-          0% { transform: translateY(0px) }
-          50% { transform: translateY(-20px) }
-          100% { transform: translateY(0px) }
-        }
-      `}</style>
     </Container>
   );
 }
