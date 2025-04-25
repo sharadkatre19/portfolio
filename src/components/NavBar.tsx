@@ -5,7 +5,7 @@ interface NavbarProps {
   // You can add props here if needed
 }
 
-function Navbar(props: NavbarProps): JSX.Element {
+function Navbar(_: NavbarProps): JSX.Element {
   const [navActive, setNavActive] = useState<boolean>(false);
 
   const toggleNav = (): void => {

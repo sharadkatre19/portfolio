@@ -11,7 +11,6 @@ import {
   Breadcrumbs,
   Link,
   CircularProgress,
-  useTheme,
 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
@@ -30,7 +29,6 @@ const fetchProjectById = async (id: string): Promise<PortfolioItem | null> => {
 export default function ProjectDetail() {
   const { projectId } = useParams<{ projectId: string }>();
   const navigate = useNavigate();
-  const theme = useTheme();
   const [project, setProject] = useState<PortfolioItem | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);

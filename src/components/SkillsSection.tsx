@@ -1,4 +1,3 @@
-import React from 'react';
 import data from "./../static/index.json";
 
 // Define the structure of each skill item

@@ -1,11 +1,10 @@
 import { Link } from "react-scroll";
-import React from "react";
 
 interface FooterProps {
   // You can add props here if needed in the future
 }
 
-function Footer(props: FooterProps) {
+function Footer(_: FooterProps) {
   return (
     <footer className="footer--container">
       <div className="footer--link--container">
@@ -176,7 +175,7 @@ function Footer(props: FooterProps) {
       </div>
       <hr className="divider" />
       <div className="footer--content--container">
-        <p className="footer--content">Made with 💖 by John</p>
+        <p className="footer--content">Made with 💖 by Sharad</p>
         <div className="footer--social--icon">
           <ul>
             <li>

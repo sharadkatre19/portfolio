@@ -5,9 +5,8 @@ import HeroSection from '../components/HeroSection';
 import ProjectGrid from '../components/ProjectGrid';
 import SkillsSection from '../components/SkillsSection';
 import Testimonials from '../components/Testimonials';
-import { Container, Typography, Box, Button } from '@mui/material';
+import { Container, Typography, Box } from '@mui/material';
 import { sampleProjects } from '../static/data';
-import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -16,16 +15,7 @@ export default function Home() {
   
   // Create refs for scrolling to sections
   const projectsRef = useRef<HTMLDivElement>(null);
-  const skillsRef = useRef<HTMLDivElement>(null);
   const testimonialsRef = useRef<HTMLDivElement>(null);
-  const contactRef = useRef<HTMLDivElement>(null);
-
-  // Scroll to section function
-  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   useEffect(() => {
     getPortfolioItems()
