@@ -6,7 +6,9 @@ export interface PortfolioItem {
     technologies: string[];
     liveUrl?: string;
     sourceCodeUrl?: string;
-    featured: boolean;
-    createdAt: Date;
+    featured?: boolean;
+    createdAt?: Date;
+    githubUrl?: string;
+    features?: string[];
   }
   

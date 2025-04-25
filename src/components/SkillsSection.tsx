@@ -1,137 +1,42 @@
-import { Box, Typography, Chip, Container, Tooltip, Fade, useTheme } from '@mui/material';
-import { useState } from 'react';
-// Import icons for each skill
-import CodeIcon from '@mui/icons-material/Code';
-import StorageIcon from '@mui/icons-material/Storage';
-import CloudIcon from '@mui/icons-material/Cloud';
-import LanguageIcon from '@mui/icons-material/Language';
-import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
+import React from 'react';
+import data from "./../static/index.json";
 
-export default function SkillsSection() {
-    const theme = useTheme();
-    const [hoveredSkill, setHoveredSkill] = useState<any>();
+// Define the structure of each skill item
+interface SkillItem {
+  src: string;
+  title: string;
+  description: string;
+}
 
-    // Map each skill to an appropriate icon and description
-    const skillsData = [
-        {
-            name: 'React',
-            icon: <CodeIcon />,
-            description: 'Building interactive UIs with React and its ecosystem',
-            color: '#61dafb'
-        },
-        {
-            name: 'TypeScript',
-            icon: <CodeIcon />,
-            description: 'Type-safe JavaScript development with advanced features',
-            color: '#3178c6'
-        },
-        {
-            name: 'Node.js',
-            icon: <StorageIcon />,
-            description: 'Server-side JavaScript runtime for building scalable applications',
-            color: '#68a063'
-        },
-        {
-            name: 'Firebase',
-            icon: <CloudIcon />,
-            description: 'Google\'s platform for building web and mobile applications',
-            color: '#ffca28'
-        },
-        {
-            name: 'GraphQL',
-            icon: <LanguageIcon />,
-            description: 'Query language for APIs and runtime for executing those queries',
-            color: '#e535ab'
-        },
-        {
-            name: 'Docker',
-            icon: <DeveloperBoardIcon />,
-            description: 'Platform for developing, shipping, and running applications in containers',
-            color: '#2496ed'
-        }
-    ];
+// Define the structure of the data we're importing
+interface DataStructure {
+  skills?: SkillItem[];
+  // Add other properties from your data file as needed
+}
 
-    return (
-        <Container>
-            <Box
-                component="section"
-                sx={{
-                    my: 8,
-                    position: 'relative'
-                }}
-            >
-                <Typography
-                    variant="h4"
-                    component="h2"
-                    sx={{
-                        fontWeight: 700,
-                        mb: 4,
-                        position: 'relative',
-                        display: 'inline-block',
-                        '&:after': {
-                            content: '""',
-                            position: 'absolute',
-                            bottom: -8,
-                            left: 0,
-                            width: '60px',
-                            height: '4px',
-                            backgroundColor: theme.palette.primary.main,
-                            borderRadius: '2px'
-                        }
-                    }}
-                >
-                    Technical Skills
-                </Typography>
+export default function MySkills() {
+  // Type assertion for the imported data
+  const typedData = data as DataStructure;
 
-                <Box sx={{
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    gap: 2,
-                    mt: 6
-                }}>
-                    {skillsData.map((skill) => (
-                        <Tooltip
-                            key={skill.name}
-                            title={skill.description}
-                            placement="top"
-                            TransitionComponent={Fade}
-                            TransitionProps={{ timeout: 600 }}
-                            arrow
-                        >
-                            <Chip
-                                icon={skill.icon}
-                                label={skill.name}
-                                onClick={() => console.log(`${skill.name} clicked`)}
-                                onMouseEnter={() => setHoveredSkill(skill.name)}
-                                onMouseLeave={() => setHoveredSkill(null)}
-                                sx={{
-                                    px: 1,
-                                    py: 2.5,
-                                    fontSize: '1rem',
-                                    fontWeight: 500,
-                                    borderColor: hoveredSkill === skill.name ? skill.color : undefined,
-                                    backgroundColor: hoveredSkill === skill.name ? `${skill.color}1A` : undefined, // 10% opacity version of the color
-                                    transition: 'all 0.3s ease',
-                                    '&:hover': {
-                                        transform: 'translateY(-4px)',
-                                        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-                                    },
-                                    cursor: 'pointer'
-                                }}
-                            />
-                        </Tooltip>
-                    ))}
-                </Box>
-
-                {/* Optional Skill Description Section */}
-                <Box sx={{ mt: 4, height: '60px', transition: 'all 0.3s ease' }}>
-                    {hoveredSkill && (
-                        <Typography variant="body1" sx={{ color: 'text.secondary' }}>
-                            {skillsData.find(s => s.name === hoveredSkill)?.description || 'Explore this technology'}
-                        </Typography>
-                    )}
-                </Box>
-            </Box>
-        </Container>
-    );
+  return (
+    <section className="skills--section" id="mySkills">
+      <div className="portfolio--container">
+        <p className="section--title">My Skills</p>
+        <h2 className="skills--section--heading">My Expertise</h2>
+      </div>
+      <div className="skills--section--container">
+        {typedData?.skills?.map((item, index) => (
+          <div key={index} className="skills--section--card">
+            <div className="skills--section--img">
+              <img src={item.src} alt="Product Chain" />
+            </div>
+            <div className="skills--section--card--content">
+              <h3 className="skills--section--title">{item.title}</h3>
+              <p className="skills--section--description">{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
