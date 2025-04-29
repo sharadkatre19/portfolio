@@ -2,47 +2,47 @@
     "skills": [
       {
         "id": "1",
-        "src": "./src/assets/images/product-chain-1.png",
+        "src": "../src/assets/images/product-chain-1.png",
         "title": "Front-End",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+        "description": "Proficient in building dynamic user interfaces with React.js, Next.js, Angular, and styling with Tailwind CSS."
       },
       {
         "id": "2",
-        "src": "./src/assets/images/tag-1.png",
-        "title": "Back-End",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+        "src": "../src/assets/images/tag-1.png",
+        "title": "Mobile",
+        "description": "Experienced in developing native iOS and Android applications, as well as cross-platform solutions using React Native & Flutter."
       },
       {
         "id": "3",
-        "src": "./src/assets/images/feather-pen-2.png",
-        "title": "UI & UX Design",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+        "src": "../src/assets/images/feather-pen-2.png",
+        "title": "Back-End",
+        "description": "Skilled in server-side development using Node.js and managing databases like SQL/PostgreSQL and Firestore."
       },
       {
         "id": "4",
-        "src": "./src/assets/images/feather-pen-1.png",
-        "title": "Webflow Development",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+        "src": "../src/assets/images/feather-pen-1.png",
+        "title": "Cloud & AI",
+        "description": "Familiar with GCP and Azure DevOps for cloud services and has experience integrating AI-LLM for text generation."
       }
     ],
     "portfolio": [
       {
         "id": "1",
-        "src": "./src/assets/images/placeholder-image.png",
+        "src": "../src/assets/images/placeholder-image.png",
         "title": "Ahuse",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
         "link": "View In Github"
       },
       {
         "id": "2",
-        "src": "./src/assets/images/placeholder-image-1.png",
+        "src": "../src/assets/images/placeholder-image-1.png",
         "title": "App Dashboard",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
         "link": "View In Github"
       },
       {
         "id": "3",
-        "src": "./src/assets/images/placeholder-image-2.png",
+        "src": "../src/assets/images/placeholder-image-2.png",
         "title": "Easy Rentn",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
         "link": "View In Github"
@@ -52,7 +52,7 @@
       {
         "id": "1",
         "count": "5",
-        "src": "./src/assets/images/avatar-image.png",
+        "src": "../src/assets/images/avatar-image.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
         "author_name": "Dianne Russel",
         "author_designation": "Starbucks"
@@ -60,7 +60,7 @@
       {
         "id": "2",
         "count": "5",
-        "src": "./src/assets/images/avatar-image-1.png",
+        "src": "../src/assets/images/avatar-image-1.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
         "author_name": "Kristin Watson",
         "author_designation": "Louis Vuitton"
@@ -68,7 +68,7 @@
       {
         "id": "3",
         "count": "5",
-        "src": "./src/assets/images/avatar-image-2.png",
+        "src": "../src/assets/images/avatar-image-2.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
         "author_name": "Kathryn Murphy",
         "author_designation": "McDonald's"

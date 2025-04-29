@@ -14,14 +14,14 @@ export default function HeroSection(_: HeroSectionProps) {
             Developer
           </h1>
           <p className="hero--section-description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            <br /> Dolorum, quas. Amet soluta assumenda cum?
+          Highly organized and dependable professional.
+            <br /> Effectively manages multiple priorities, exceeds expectations, and willingly takes on extra responsibilities to achieve team goals.
           </p>
         </div>
         <button className="btn btn-primary">Get In Touch</button>
       </div>
       <div className="hero--section--img">
-        <img src="./src/assets/images/hero_img.png" alt="Hero Section" />
+        <img src="../src/assets/images/hero_img.png" alt="Hero Section" />
       </div>
     </section>
   );
