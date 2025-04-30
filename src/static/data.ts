@@ -40,7 +40,7 @@ export const sampleProjects: PortfolioItem[] = [
     id: "3",
     title: "Weather Dashboard",
     description: "An interactive weather application that displays current weather conditions and forecasts for locations worldwide. Utilizes OpenWeatherMap API and includes visualization of weather patterns.",
-    imageUrl: "../src/assets/images/worxmate-logo.png",
+    imageUrl: "src/assets/images/worxmate-logo.png",
     technologies: ["JavaScript", "Angular", "Chart.js", "NodeJS", "Firestore", "Google Cloud Functions", "App Engine", "Cloud Run", "Cloud Storage", "Cloud Pub/Sub", "BigQuery", "Cloud Monitoring", "Cloud Logging"],
     githubUrl: "https://github.com/yourusername/weather-dashboard",
     liveUrl: "https://okr.worxmate.ai/",

@@ -39,7 +39,7 @@ function Navbar(_: NavbarProps): JSX.Element {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src="../src/assets/images/logo.png" alt="Logoipsum" height={60} width={60} />
+        <img src="src/assets/images/logo.png" alt="Logoipsum" height={60} width={60} />
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
