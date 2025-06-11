@@ -46,7 +46,7 @@ export default function MySkills() {
 
   const handleCardClick = (index: number, title: string) => {
     // Add analytics or navigation logic here
-    console.log(`Clicked on ${title} skill card`);
+    console.log(`Clicked on ${index}: ${title} skill card`);
   };
 
   const handleKeyDown = (event: React.KeyboardEvent, index: number, title: string) => {
@@ -94,7 +94,7 @@ export default function MySkills() {
         ))}
       </div>
       
-      <style jsx>{`
+      <style>{`
         .skills-section {
           display: flex;
           padding: clamp(60px, 10vw, 149.33px) clamp(20px, 6vw, 85.33px);
