@@ -14,8 +14,7 @@ export default function HeroSection(_: HeroSectionProps) {
             Developer
           </h1>
           <p className="hero--section-description">
-          Highly organized and dependable professional.
-            <br /> Effectively manages multiple priorities, exceeds expectations, and willingly takes on extra responsibilities to achieve team goals.
+          Results-driven Full Stack Developer with 7+ years of experience building high-performance web and mobile applications. Expert in React ecosystem, cloud technologies, and A/B testing optimization using VWO. Recognized leader with multiple awards, specializing in AI-powered solutions and performance optimization that drive business growth.
           </p>
         </div>
         <button className="btn btn-primary">Get In Touch</button>
